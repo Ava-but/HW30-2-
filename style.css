@@ -1,0 +1,124 @@
+.snake-game {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .snake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: snake-head 4s ease-in-out infinite ;
+  }
+  
+  .snake-head {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .snake-body {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  
+  .apple {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+  top: 20px;
+  left: 1px;
+    animation: apple 4s ease-in-out infinite ;
+  }
+  
+  @keyframes snake-head {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translatey(100px);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    75% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes apple {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translatey(100px);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    75% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/*   
+  .snake-head {
+    animation: move-head 4s ease-in-out infinite;
+  }
+  
+  @keyframes move-head {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+    75% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .snake-body {
+    animation: move-body 4s ease-in-out infinite;
+  }
+  
+  @keyframes move-body {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+    75% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */
